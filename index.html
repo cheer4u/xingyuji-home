@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>星屿集 · 作品与项目</title>
+  <meta name="description" content="星屿集的作品与项目：星屿读书（本地优先 AI 阅读助手）、Cinejoy 双语字幕、YouTube 频道标签库。">
+  <meta name="theme-color" content="#f5f2e9">
+  <link rel="canonical" href="https://xingyuji.loc.cc/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="星屿集 · 作品与项目">
+  <meta property="og:description" content="把想读的、想看的、想做的，都做成能用的东西。">
+  <meta property="og:url" content="https://xingyuji.loc.cc/">
+  <style>
+    :root{
+      --ink:#252722; --muted:#6f7268; --accent:#637969; --accent-soft:#e6ece7;
+      --paper:#f5f2e9; --card:#fffdf8; --line:#dfd9cb;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0; color:var(--ink); background:var(--paper);
+      font:15px/1.85 -apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;
+      -webkit-font-smoothing:antialiased;
+    }
+    .wrap{max-width:940px;margin:0 auto;padding:0 22px}
+    header{padding:78px 0 46px;border-bottom:1px solid var(--line)}
+    .brand{font:600 13px/1.4 Georgia,serif;letter-spacing:.22em;color:var(--accent);text-transform:uppercase}
+    h1{font:600 clamp(30px,6vw,48px)/1.35 "Songti SC",Georgia,serif;margin:18px 0 12px;letter-spacing:.01em}
+    .lead{font-size:16px;color:var(--muted);max-width:640px;margin:0}
+    .lead em{font-style:normal;color:var(--accent);border-bottom:1px solid var(--accent-soft)}
+    nav{display:flex;gap:22px;flex-wrap:wrap;margin-top:30px;font-size:13.5px}
+    nav a{color:var(--muted);text-decoration:none;border-bottom:1px solid transparent}
+    nav a:hover{color:var(--accent);border-color:var(--accent)}
+    section{padding:52px 0}
+    .sec-head{display:flex;align-items:baseline;gap:12px;margin-bottom:26px}
+    .sec-head h2{font:600 21px/1.4 "Songti SC",Georgia,serif;margin:0}
+    .sec-head span{font:11px/1 Georgia,serif;letter-spacing:.18em;color:#a49d8e;text-transform:uppercase}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(268px,1fr));gap:16px}
+    .card{
+      display:flex;flex-direction:column;background:var(--card);border:1px solid var(--line);
+      border-radius:13px;padding:24px 22px;transition:transform .2s,border-color .2s,box-shadow .2s;
+    }
+    .card:hover{transform:translateY(-3px);border-color:var(--accent);box-shadow:0 12px 30px #63796914}
+    .tag{align-self:flex-start;font-size:10.5px;letter-spacing:.08em;color:var(--accent);
+      background:var(--accent-soft);border-radius:99px;padding:3px 10px;margin-bottom:15px}
+    .card h3{font:600 18px/1.45 "Songti SC",Georgia,serif;margin:0 0 9px}
+    .card p{margin:0 0 20px;color:var(--muted);font-size:13.5px;flex:1}
+    .links{display:flex;gap:14px;flex-wrap:wrap;font-size:13px}
+    .links a{color:var(--accent);text-decoration:none;border-bottom:1px solid var(--accent-soft)}
+    .links a:hover{border-color:var(--accent)}
+    .featured{grid-column:1/-1;background:linear-gradient(120deg,#fffdf8,#eef3ee);border-color:var(--accent-soft)}
+    .featured .card-body{display:grid;grid-template-columns:1fr 190px;gap:24px;align-items:center}
+    .featured h3{font-size:23px}
+    .glyph{font:600 76px/1 Georgia,serif;color:var(--accent);opacity:.28;text-align:center;user-select:none}
+    footer{border-top:1px solid var(--line);padding:30px 0 60px;color:#9a9588;font-size:12px;display:flex;
+      justify-content:space-between;gap:14px;flex-wrap:wrap}
+    @media(max-width:640px){
+      header{padding:52px 0 36px}
+      .featured .card-body{grid-template-columns:1fr}
+      .glyph{display:none}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">Xingyu · Projects</div>
+      <h1>星屿集 · 作品与项目</h1>
+      <p class="lead">把想读的、想看的、想做的，都做成<em>能用的东西</em>。这里放着几个我一直在维护的小项目。</p>
+      <nav>
+        <a href="#reader">星屿读书</a>
+        <a href="#tools">浏览器小工具</a>
+        <a href="#about">关于</a>
+      </nav>
+    </header>
+
+    <section id="reader">
+      <div class="sec-head"><h2>主力项目</h2><span>01 — Reading</span></div>
+      <div class="grid">
+        <article class="card featured">
+          <div class="card-body">
+            <div>
+              <span class="tag">本地优先 · AI 阅读助手</span>
+              <h3>星屿读书</h3>
+              <p>浏览器里读 EPUB：三栏精读、中英对照翻译、整章逐句讲解、双语朗读、单词本与网上书评。书籍、笔记和索引默认只存在你自己的浏览器里，不上传服务器。</p>
+              <div class="links"><a href="https://xingyu-reader.pages.dev/" target="_blank" rel="noopener">打开网站 ↗</a></div>
+            </div>
+            <div class="glyph" aria-hidden="true">Ⅹ</div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="tools">
+      <div class="sec-head"><h2>浏览器小工具</h2><span>02 — Tools</span></div>
+      <div class="grid">
+        <article class="card">
+          <span class="tag">油猴脚本</span>
+          <h3>Cinejoy 双语字幕</h3>
+          <p>在 cinejoy.pk 播放器里同时显示中英两条字幕：自动挑最完整的英文字幕、边播边对齐音轨，中文可用人工轨或自己的模型按语义重译，中英严格同步。</p>
+          <div class="links">
+            <a href="https://greasyfork.org/zh-CN/scripts/605573" target="_blank" rel="noopener">Greasy Fork ↗</a>
+            <a href="https://gist.github.com/cheer4u/3a7fb5fb98f54923d7637c5227593fc7" target="_blank" rel="noopener">源码 Gist ↗</a>
+          </div>
+        </article>
+        <article class="card">
+          <span class="tag">Chrome 扩展</span>
+          <h3>YouTube 频道标签库</h3>
+          <p>把订阅的 YouTube 频道按内容打标签，在独立页面里浏览、搜索、筛选，绕开网页版 999 个的上限；再往前一步，用会记忆的兴趣知识网络主动发现没订阅过的内容。</p>
+          <div class="links"><a href="https://github.com/cheer4u/youtube-channel-tagger" target="_blank" rel="noopener">GitHub ↗</a></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="sec-head"><h2>关于</h2><span>03 — About</span></div>
+      <p class="lead">我是星屿集。做内容，也做工具——相信好的工具应该像好的文章一样：克制、好用、不打扰。项目都在持续迭代，欢迎留言交流。</p>
+    </section>
+
+    <footer>
+      <span>© 2026 星屿集 · xingyuji.loc.cc</span>
+      <span>Made with care, not noise.</span>
+    </footer>
+  </div>
+</body>
+</html>
