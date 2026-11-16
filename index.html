@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>星屿集 · 作品与项目</title>
-  <meta name="description" content="星屿集的作品与项目：星屿读书（本地优先 AI 阅读助手）、Cinejoy 双语字幕、YouTube 频道标签库。">
+  <meta name="description" content="星屿集的作品与项目：星屿读书（本地优先 AI 阅读助手）、《第十个夏天》雅思单字阅读站、Cinejoy 双语字幕、YouTube 频道标签库。">
   <meta name="theme-color" content="#f5f2e9">
   <link rel="canonical" href="https://xingyuji.loc.cc/">
   <meta property="og:type" content="website">
@@ -50,9 +50,11 @@
     .links a{color:var(--accent);text-decoration:none;border-bottom:1px solid var(--accent-soft)}
     .links a:hover{border-color:var(--accent)}
     .featured{grid-column:1/-1;background:linear-gradient(120deg,#fffdf8,#eef3ee);border-color:var(--accent-soft)}
+    .featured.novel{background:linear-gradient(120deg,#fffdf8,#f7edf1);border-color:#eddfe5}
     .featured .card-body{display:grid;grid-template-columns:1fr 190px;gap:24px;align-items:center}
     .featured h3{font-size:23px}
     .glyph{font:600 76px/1 Georgia,serif;color:var(--accent);opacity:.28;text-align:center;user-select:none}
+    .featured.novel .glyph{color:#b98096;font-family:"Songti SC",Georgia,serif}
     footer{border-top:1px solid var(--line);padding:30px 0 60px;color:#9a9588;font-size:12px;display:flex;
       justify-content:space-between;gap:14px;flex-wrap:wrap}
     @media(max-width:640px){
@@ -87,6 +89,20 @@
               <div class="links"><a href="https://xingyu-reader.pages.dev/" target="_blank" rel="noopener">打开网站 ↗</a></div>
             </div>
             <div class="glyph" aria-hidden="true">Ⅹ</div>
+          </div>
+        </article>
+        <article class="card featured novel">
+          <div class="card-body">
+            <div>
+              <span class="tag">原创小说 · 雅思词汇</span>
+              <h3>《第十个夏天》</h3>
+              <p>把 9,051 个雅思单词写进 100 章原创 BL 小说里：校园同桌到十年重逢，边看故事边在语境里认词。学习版点词看音标、发音、例句并收进生字本，复习版遮住中文自测；进度只存在浏览器本地，手机上可「加入主画面」当 App 用。</p>
+              <div class="links">
+                <a href="https://cheer4u.github.io/tenth-summer-ielts/" target="_blank" rel="noopener">在线阅读 ↗</a>
+                <a href="https://github.com/cheer4u/tenth-summer-ielts" target="_blank" rel="noopener">GitHub ↗</a>
+              </div>
+            </div>
+            <div class="glyph" aria-hidden="true">夏</div>
           </div>
         </article>
       </div>
